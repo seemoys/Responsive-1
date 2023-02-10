@@ -1,0 +1,299 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500&family=Dela+Gothic+One&family=Fredoka+One&family=Indie+Flower&family=Kalam&family=Lobster&family=Lobster+Two:ital@1&family=Macondo&family=Poppins:wght@400;500&family=Raleway:wght@200&family=Red+Rose&family=Righteous&family=Unbounded:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+body{
+    width: 100%;
+    height: 120vh;
+    background-color: #111827;
+}
+header {
+    /* height: 10%; */
+    /* background-color: #111827; */
+    /* display: flex; */
+    /* margin: 20px; */
+    /* position: fixed; */
+}
+.hambrgr-menu input{
+    opacity: 0;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 25px;
+    margin:15px 15px
+}
+.navbar ul li {
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: 'Macondo', cursive;
+    font-weight: 500;
+    text-shadow: 1px 1px  lightgreen;
+}
+.navbar ul li a:hover{
+    background-color: blue;
+    border-radius: 25px;
+    /* font-size:20px ; */
+}
+
+/* Hero */
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.hero-text{
+    display: flex;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+}
+.intro h3{
+    text-transform: capitalize;
+    font-size: 25px;
+    margin: 0px 15px;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px gold;
+
+}
+.intro h1{
+    text-transform: uppercase;
+    font-size: 55px;
+    margin: 0px 15px;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 2px;
+
+}
+.intro h2{
+    text-transform: capitalize;
+    font-size: 40px;
+    margin: 0px 15px;
+    color: gold;
+    font-family: 'Kalam', cursive;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px white;
+
+
+}
+/* Project */
+.projects{
+    margin-top: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.project-heading h1{
+    text-transform: capitalize;
+    border-bottom: 2px solid blue;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 2px blue;
+    margin-bottom: 15px;
+}
+.project-container p{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 1px;
+    
+}
+.pro1{
+    border-left: 1px dotted white;
+    border-bottom: 1px dotted white;
+    border-right: 1px dotted white;
+
+}
+.pro2{
+    border-left: 1px dotted white;
+    border-bottom: 1px dotted white;
+    border-right: 1px dotted white;
+}
+.pro3{
+    border-left: 1px dotted white;
+    border-bottom: 1px dotted white;
+    border-right: 1px dotted white;
+}
+.pro4{
+    border-left: 1px dotted white;
+    border-bottom: 1px dotted white;
+    border-right: 1px dotted white;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+/* Skills */
+.skills-heading{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 2px blue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.skills-heading h1{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 2px blue;
+    margin-bottom: 15px;
+    border-bottom: 2px solid blue;
+}
+.skills-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:25px;
+    font-size: 70px;
+    font-size: 70px;
+    margin-bottom: 30px;    
+}
+.skills-container:hover{
+    font-size: 75px;
+
+}
+
+
+
+
+/* Contact */
+.contact{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 2px blue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .contact h1{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 2px blue;
+    margin-bottom: 15px;
+    border-bottom: 2px solid blue;
+}
+.icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    font-size: 50px;
+    font-size: 50px;
+    height: 50px;
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+.icon-container:hover{
+    font-size: 55px;
+
+}
+/* End */
+
+/* Mobile-response */
+
+@media screen and (max-width: 576px) {
+    /* HAMBRGR */
+    .navbar{
+        /* display: none; */
+        transform: translateX(-150%);
+        transition: 0.5s ease-in-out;
+    }
+    .hambrgr-menu input[type="checkbox"]:checked ~ .navbar  {
+        display: flex;
+        padding-top: 50px;
+        justify-content: center;
+        transform: translateX(0%);
+    }
+    .hambrgr-menu input[type="checkbox"]:checked ~ .navbar ul{
+        flex-direction: column;
+    }
+    .hambrgr-menu input{
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        z-index: 2;
+        opacity: 0;
+    }
+    .hambrgr-menu{
+        /* border: 1px solid red; */
+        position: relative;
+
+    }
+    .hambrgr-lines{
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        /* background-color: beige; */
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .hambrgr-lines .line{
+        display: block;
+        height: 5px;
+        width: 100%;
+        background-color:white;
+    }
+    .hero-section{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    .hero-text{
+        display: block;
+        justify-content: center;
+    }
+    .hi{
+        display: block;
+        justify-content: center;
+    }
+    .intro{
+        display: block;
+        justify-content: center;
+    }
+    .hero-images img{
+        height: 300px;
+    }
+    .project-container{
+        display: block;
+        
+    }
+    .skills-container{
+        display: grid;
+        align-items: center;
+        
+    }
+
+   
+}

@@ -1,0 +1,251 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500&family=Dela+Gothic+One&family=Fredoka+One&family=Indie+Flower&family=Kalam&family=Lobster&family=Lobster+Two:ital@1&family=Macondo&family=Poppins:wght@400;500&family=Raleway:wght@200&family=Red+Rose&family=Righteous&family=Unbounded:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.landing-page{
+    background-image:url(./Assets/Backroung.jpg);
+    width: 100%;
+    height: 100vh;
+}
+.navigation{
+    width: 100%;
+    height: 15vh;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+.left-nav{
+    /* background-color: aqua; */
+    width: 30%;
+     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.delivery-container{
+    display: flex;
+    gap: 5px;
+}
+.right-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+.right-nav{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-right: 55px;
+}
+.navigation-menu ul{
+     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 50px;
+    margin-top: 15px;
+    
+}
+.navigation-menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+        color: #410E0E;
+
+    font-family: 'Kalam', cursive;
+}
+.navigation-menu ul li a:hover{
+    font-size: 22px;
+    border-bottom: 1px solid #ffffff;
+    color: #410E0E;
+}
+
+.logo{
+    font-size: 55px;
+    color: #410E0E;
+    cursor: pointer;
+}
+.brand{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Unbounded', cursive;
+    color: #410E0E;
+
+}
+.brand:hover{
+    border: 2px solid #410e0eb8;
+}
+.delivery-logo{
+    font-size: 25px;
+    color: #410E0E;
+
+}
+.delivery-number {
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    color: #410E0E;
+    
+}
+.delivery-number a{
+    text-decoration: none;
+    color: #410E0E;
+
+}
+.delivery-number a:hover{
+    text-decoration: underline;
+}
+
+/* Hero */
+
+.hero-section{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.left-hero-section{
+    width: 35%;
+    /* background-color: cadetblue; */
+    margin-left: 35px;
+    
+}
+.left-hero-section h3{
+    /* border: 1px dashed #000000; */
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    color: #410E0E;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-left: 8px;
+    border: 1px dashed white;
+
+}
+
+
+.left-hero-section h1{
+    color: #410E0E;
+    font-size: 125px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    line-height: 95px;
+    margin-top: 10px;
+
+}
+.left-hero-section h1::first-letter{
+    font-family: 'Red Rose', cursive;
+    font-size: 155px;
+}
+.left-hero-section h1 span{
+    color: #410E0E;
+    font-size: 95px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px white rgb(15, 13, 13);
+    font-family: 'Red Rose', cursive;
+    font-weight: 900;
+
+}
+
+/* Right hero Image section */
+
+.right-hero-section{
+    position: relative;
+    /* background-color: brown; */
+
+}
+.right-hero-section .img1{
+    height: 285px;
+    position: absolute;
+    right:255px;
+    bottom:-155px;
+    z-index: 5;
+}
+.right-hero-section .img2{
+    height: 375px;
+    position: absolute;
+    right:205px;
+    bottom:-155px;
+    z-index: 4;
+
+}
+.right-hero-section .img3{
+    height: 300px;
+    position: absolute;
+    right:420px;
+    bottom:-95px;
+    z-index: 3;
+
+}
+.right-hero-section .img4{
+    width:600px;
+    height: 300px;
+    position: absolute;
+    left:-650px;
+    top:-270px;
+    z-index: 2;
+    /* border: 1px solid black; */
+
+}
+.right-hero-section .img5{
+    height: 70px;
+    width: 500px;
+    position: absolute;
+   left: -690px;
+   top: 150px;
+
+}
+.right-hero-section .img6{
+    height: 70px;
+    width: 250px;
+    position: absolute;
+   left: -395px;
+   top: 150px;
+    /* border: 1px solid black; */
+}
+.price-tag{
+    width: 125px;
+    height: 125px;
+    background-color: #fd0101ea;
+    border-radius: 50%;
+    z-index: 6;
+    position: absolute;
+    right: 520px;
+    top: 75px;
+    border: 1px dashed white ;
+    
+}
+.price-tag:hover{
+    width: 135px;
+    height: 135px;
+    background-color: #22ec29d2;
+    
+}
+.price-tag p{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: cursive;
+    position: relative;
+    top: 25px;
+    left:5px;
+    text-align: center;
+    text-shadow: 2px 3px black;
+    color: #ffffff;
+}
+.price-tag p:hover{
+    color: #000000;
+    text-shadow: 1px 1px #410E0E;
+}
+
